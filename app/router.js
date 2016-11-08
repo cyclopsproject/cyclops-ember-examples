@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('widgets', function() {
+    this.route('toggle');
+  });
 });
 
 export default Router;
